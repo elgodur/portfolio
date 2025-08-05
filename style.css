@@ -1,5 +1,7 @@
 html {
 	box-sizing: border-box;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%,rgba(200, 200, 200, 1) 100%);
+
 }
 
 *, *::before, *::after {
@@ -11,18 +13,18 @@ html {
 body {
 	font-family: Inter;
 	margin:0;
-	overflow: hidden;
 }
 
 nav {
 	height:100px;
 	width: 100%;
  	background-color:#1A1A1A;
-  	padding-left: 240px;
-  	padding-right: 240px;
+  	padding-left: 25%;
+  	padding-right: 25%;
   	display: flex;
   	justify-content: space-between;
   	align-items: center;
+	position: fixed;
 }
 
 ul {
@@ -61,4 +63,100 @@ li a:hover{
     transition: background-color 400ms ease-out;
  }
 
+h1{
+	display:flex;
+	width:100%;
+	height:300px;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+}
 
+.skills{
+	display:flex;
+	color:white;
+	justify-content: center;
+	flex-direction: column;
+	row-gap:60px;
+	/*background-image:url('/images/background.svg');*/
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.skills div {
+	width:50%;
+	justify-content: center;
+	align-self: center;
+	background:#1A1A1A;
+	border-radius:20px;
+	line-height: 3;
+	padding:60px;
+	overflow:hidden;
+	background: linear-gradient(90deg, rgba(26,26,26,1) 0%, rgba(30, 30, 30, 0.6) 100%);
+
+}
+
+.skills div p {
+	width:900px;
+}
+
+.skills div img {
+	float:right;
+}
+
+.portfolio {
+	display:flex;
+	color:white;
+	flex-direction: row;
+	column-gap:60px;
+	align-content:center ;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.portfolioArtikel {
+	border-radius:20px;
+	color:white;
+	padding:60px;
+	font-size:1em;
+	justify-items:stretch;
+	flex-wrap: wrap;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	overflow:hidden;
+	width:15%;
+	justify-content: space-between;
+}
+
+.portfolioArtikel a {
+	align-self: flex-end;
+	cursor:pointer;
+}
+
+.portfolioArtikel h3 {
+	height: 36px;
+	text-align:center;
+	line-height: 36px;
+}
+
+.portfolioArtikel img {
+	width:100%;
+}
+
+.portfolio div:nth-of-type(1) {
+	background: linear-gradient(180deg, rgba(26,26,26,1) 0%, rgba(86, 156, 191, 1) 100%);
+}
+
+.portfolio div:nth-of-type(2) {
+	background: linear-gradient(180deg, rgba(26,26,26,1) 0%, rgba(90, 75, 166, 1) 100%);
+}
+
+.portfolio div:nth-of-type(3) {
+	background: linear-gradient(180deg, rgba(26,26,26,1) 0%, rgba(140, 63, 140, 1) 100%);
+}
+
+.arrowCTA {
+	height:36px;
+	cursor:pointer;
+}
