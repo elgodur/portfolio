@@ -79,7 +79,18 @@ h1{
 	background-size: cover;
 	flex-direction: column;
 	align-items: center;
-	row-gap:120px;
+	row-gap:60px;
+}
+
+.content h2 {
+	font-size:3em;
+	color:white;
+	font-weight:800;
+}
+
+.content h3 {
+	font-size:1.5em;
+	font-weight:800;
 }
 
 .overMij {
@@ -113,20 +124,39 @@ h1{
 
 .portfolio {
 	color:white;
+	max-width:50%;
+	display:flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	column-gap: 60px;
+	row-gap:60px;
+	justify-content:space-between ;
 }
 
-.portfolioArtikel a {
-	cursor:pointer;
+
+.portfolioArtikel {
+	padding:60px;
+	border-radius:20px;
+	order:1;
+	flex-basis:29%;
+	display:flex;
+	flex-direction: column;
+	row-gap: 30px;
+	justify-content:flex-start ;
+	align-self: flex-start;
 }
 
 .portfolioArtikel h3 {
-	height: 36px;
 	text-align:center;
 	line-height: 36px;
 }
 
 .portfolioArtikel img {
-	width:50%;
+	width:100%;
+}
+
+.portfolioArtikel a {
+	
 }
 
 .portfolio div:nth-of-type(1) {
@@ -144,4 +174,22 @@ h1{
 .arrowCTA {
 	height:36px;
 	cursor:pointer;
+}
+
+.cta {
+	color:white;
+	display:block;
+	padding:18px 30px;
+	border-radius:20px;
+	font-weight:800;
+	background: #8C3F8C;
+	background: linear-gradient(90deg, rgba(140, 63, 140, 1) 0%, rgba(90, 75, 166, 1) 50%, rgba(86, 156, 191, 1) 100%);
+}
+
+.cta:hover {
+	background: white;
+	color:#1A1A1A;
+	-webkit-transition: background-color 400ms ease-out;
+    -ms-transition: background-color 400ms ease-out;
+    transition: background-color 400ms ease-out;
 }
