@@ -14,13 +14,15 @@ body {
 	font-family: Inter;
 	margin:0;
 }
-
+a {
+	text-decoration:none;
+}
 nav {
 	height:100px;
 	width: 100%;
  	background-color:#1A1A1A;
-  	padding-left: 25%;
-  	padding-right: 25%;
+  	padding-left: 10%;
+  	padding-right: 10%;
   	display: flex;
   	justify-content: space-between;
   	align-items: center;
@@ -29,14 +31,12 @@ nav {
 
 ul {
   	list-style: none;
-  	display: flex;
 }
 
 li {
 	float:left;
 	display:inline;
 	text-align: center;
-	margin: 0 30px 0 30px;
 }
 
 li a {
@@ -72,21 +72,26 @@ h1{
 	font-size: 3em;
 }
 
-.skills{
+.content {
 	display:flex;
-	color:white;
-	justify-content: center;
+	background-image:url('/images/background.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
 	flex-direction: column;
-	row-gap:60px;
-	/*background-image:url('/images/background.svg');*/
+	justify-items: center;
+}
+
+.content div {
+	width:75%;
+}
+
+.skills{
+	color:white;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .skills div {
-	width:50%;
-	justify-content: center;
-	align-self: center;
 	background:#1A1A1A;
 	border-radius:20px;
 	line-height: 3;
@@ -96,41 +101,21 @@ h1{
 
 }
 
-.skills div p {
-	width:900px;
-}
 
-.skills div img {
-	float:right;
-}
+
 
 .portfolio {
-	display:flex;
 	color:white;
-	flex-direction: row;
-	column-gap:60px;
-	align-content:center ;
-	justify-content: center;
-	flex-wrap: wrap;
 }
 
 .portfolioArtikel {
 	border-radius:20px;
 	color:white;
-	padding:60px;
+	padding:2%;
 	font-size:1em;
-	justify-items:stretch;
-	flex-wrap: wrap;
-	display:flex;
-	flex-direction: column;
-	align-items: center;
-	overflow:hidden;
-	width:15%;
-	justify-content: space-between;
 }
 
 .portfolioArtikel a {
-	align-self: flex-end;
 	cursor:pointer;
 }
 
