@@ -9,102 +9,61 @@
 	</head>
 	<body>
 		<nav>
-			<a href="#">Tim Bruines</a>
-			<ul>
+			<a href="#" class="title">Tim Bruines</a>	 
+			<ul class="nav">
 				<li>
-					<a href="#">Projecten</a>
+					<a href="#" class="nav-page">Projecten</a>
 				</li>
 				<li> 
-					<a href="#">Over mij</a>
+					<a href="#" class="nav-page">Over mij</a>
 				</li>
 				<li>
-					<a href="#">Resumé</a>
+					<a href="#" class="nav-page">Resumé</a>
 				</li>
 				<li>
-					<a href="#" class="contact">Contact</a>
+					<a href="#" class="contact nav-page">Contact</a>
 				</li>
 			</ul>
+			</div>
 		</nav>
 		<div class="content">
-			<h1> Welkom op mijn portfolio website!</h1>
-			<div class="overMij">
-				<h2>Over mij</h2>
-				<div><img src="/images/overMijTim.png" alt="Foto" style="order:2;">
-				<p style="order:1;">Ik ben Tim Bruines, 26 jaar oud en afkomstig uit Leiden. Momenteel studeer ik aan De Haagse Hogeschool, waar ik me specialiseer in UX design. Als UX designer ben ik gepassioneerd over het creëren van gebruiksvriendelijke, visueel aantrekkelijke en functionele digitale producten.</p>
-				</div>
-				<a href="#" class="cta">Meer lezen</a>
-			</div>
 		
-			<div class="skills">
-				<h2>Skills</h2>
+			<div class="hero">
 				<div>
-					<img alt="Vector Icon" src="/images/VectorIcon.svg">
-					<h3>Graphic Design</h3>
-					<p>Mijn ervaring in grafisch ontwerp helpt me om visueel sterke en samenhangende ontwerpen te maken die de gebruikerservaring ondersteunen. Tools zoals Adobe Photoshop, Illustrator en Figma gebruik ik om deze ontwerpen tot leven te brengen.</p>
+					<p>Hoi, ik ben</p>
+					<p style="font-weight: 900; font-size:64px;">Tim Bruines.</p>
+					<p>Een UX Designer uit Hazerswoude Dorp</p><br>
+					<div class="buttons">
+						<a href="#" class="cta">Projecten</a>
+						<a href="#" class="cta-outline">Contact</a>
+					</div>
 				</div>
 				<div>
-					<img alt="Wireframe Icon" src="/images/Wireframe.svg" style="float:left; padding: 0 60px 0 0;">
-					<h3>UI / UX Design</h3>
-					<p style="padding-right:60px;">In UX design focus ik sterk op het begrijpen van de gebruiker en hun behoeften. Met deze inzichten vertaal ik naar intuïtieve en effectieve user interfaces (UI), waarbij ik aandacht besteed aan toegankelijkheid, navigatie en interactie.</p>
-			</div>
-				<div>
-					<img alt="Screen Icon" src="/images/Group.svg">
-					<h3>Prototyping</h3>
-					<p>Ik ben vaardig in het maken van interactieve prototypes die het product nabootsen. Door middel van tools zoals Figma en Adobe XD zorg ik ervoor dat gebruikers een realistisch beeld krijgen van hoe de interface werkt voordat deze wordt ontwikkeld</p>
+					<img src="/images/overMijTim.png" class="heroImage">
 				</div>
 			</div>
-			<div class="portfolio">
-					<h2 style="width:100%;">Portfolio</h2>
-				
-				<div class="portfolioRij">
-					
-					<div class="portfolioArtikel">
-						<h3>Café de Egelantier</h3>
-						<img alt="Logo" src="/images/Egelantier Logo.png">
-						<a href="#">
-							<img src="/images/arrowCTA.svg" class="arrowCTA">
-						</a>
-					</div>
-					
-					<div class="portfolioArtikel">
-						<h3>Appelkaatje</h3>
-						<img alt="Logo" src="/images/logo-appelkaatje.png">
-						<a href="#">
-							<img src="/images/arrowCTA.svg" class="arrowCTA">
-						</a>
-					</div>
+			<div class="services">
+				<h2>Services</h2>
+				<div class="service">
+					<img src="/images/GraphicDesignIcon.svg">
+					<p>Graphic Design</p>
+					<p>Mijn ervaring in grafisch ontwerp helpt me om visueel sterke en samenhangende ontwerpen te maken die de gebruikerservaring ondersteunen.</p>
+					<a href="#">Lees meer</a>
 				</div>
-
-				<div class="portfolioRij">
-					<div class="portfolioArtikel">
-						<h3>Militair Revalidatie Centrum Aardenburg</h3>
-						<img alt="Logo" src="/images/mrclogo-vierkant-oranje-zwart.png">
-						<a href="#">
-							<img src="/images/arrowCTA.svg" class="arrowCTA">
-						</a>
-					</div>
+				<div class="service">
+					<img src="/images/ui-uxdesign.svg">
+					<p>UI / UX Design</p>
+					<p>Hier focus ik op het begrijpen van de gebruiker en hun behoeften. Met deze inzichten vertaal ik naar intuïtieve en effectieve user interfaces (UI).</p>
+					<a href="#">Lees meer</a>
 				</div>
-				
-				<div class="portfolioRij">
-					<div class="portfolioArtikel">
-						<h3>Correct</h3>
-						<img alt="Logo" src="/images/correct.svg">
-						<a href="#">
-							<img src="/images/arrowCTA.svg" class="arrowCTA">
-						</a>
-					</div>
+				<div class="service">
+					<img src="/images/prototypingicon.svg">
+					<p>Prototyping</p>
+					<p>Door middel van prototyping tools maak ik interactieve prototypes die het eindproduct realistisch nabootsen.</p>
+					<a href="#">Lees meer</a>
 				</div>
-				
-
+					<a href="#" class="cta">Services</a>
 			</div>
-
-		</body>
-		<a href="#" class="cta">Projecten</a>
-		<form>
-			<input type="text" placeholder="Je naam" required>
-			<input type="text" placeholder="Je e-mailadres" required>
-			<textarea type="text" placeholder="Je bericht" required style="grid-column: 1/ span 2"></textarea>
-			<input type="submit" value="Versturen" class="cta" style="width:fit-content;">		</form>
+		</div>
 	</body>
-	
 </html>
