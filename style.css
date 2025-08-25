@@ -149,7 +149,7 @@ footer {
 	background: #1A1A1A;
 	padding:100px 30px;
 	display:flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
 .footerInfo p{
@@ -510,9 +510,9 @@ ul {
 .contactSection {
 	display:flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-evenly;
 	background-color: #f0f0f0;
-	padding:100px 0;
+	padding:100px 30px;
 }
 
 .contactInfo {
@@ -579,16 +579,10 @@ input[type=text] {
 	padding:15px;
 }
 
-input[type=text]:focus {
-	box-shadow: 0px 0px 0px 2px #195DE6 inset;
-	box-sizing: border-box;
-}
-
 input[type=button] {
 	border:none;
 	grid-column:1/2;
 	cursor:pointer;
-	
 }
 
 .bericht {
@@ -599,10 +593,6 @@ input[type=button] {
 	border-radius: 10px;
 	border: none;
 	min-height: 60px;
-}
-
-.bericht:focus {
-	box-shadow: 0px 0px 0px 2px #195DE6 inset;
 }
 
 @media only screen and (max-width: 1200px) and (min-width:1050px) {
