@@ -26,7 +26,7 @@
 			</ul>
 			</div>
 		</nav>
-		
+		<!--
 		<div class="content">
 		
 			<div class="hero">
@@ -146,7 +146,6 @@
 								<li>UI / UX Design</li>
 								<li>Web Design</li>
 								<li>Branding</li>
-								<li>Testeen</li>
 							</ul>
 							<h3>Appelkaatje</h3>
 							<a href="#" class="leesMeer">Lees meer</a>
@@ -163,25 +162,16 @@
 						<p>Opleidingen</p>
 					</li>
 					<li class="ervaring">
-						<svg height="80px" width="4px">
-							<line x1="2" y1="2" x2="2" y2="78" />
-						</svg>
 						<p class="ervaringJaar">2019 - 2025</p>
 						<p class="ervaringNaam">De Haagse Hogeschool</p>
 						<p class="ervaringOpleiding">Communicatie & Multimedia Design</p>
 					</li>
 					<li class="ervaring">
-						<svg height="80px" width="4px">
-							<line x1="2" y1="2" x2="2" y2="78" />
-						</svg>
 						<p class="ervaringJaar">2016 - 2018</p>
 						<p class="ervaringNaam">Groene Hart Lyceum</p>
 						<p class="ervaringOpleiding">HAVO</p>
 					</li>
 					<li class="ervaring">
-						<svg height="80px" width="4px">
-							<line x1="2" y1="2" x2="2" y2="78" />
-						</svg>
 						<p class="ervaringJaar">2012 - 2016</p>
 						<p class="ervaringNaam">Groene Hart Rijnwoude</p>
 						<p class="ervaringOpleiding">VMBO-TL</p>
@@ -192,69 +182,86 @@
 						<img src="images/workicon.png">
 						Werkervaring</li>
 					<li class="ervaring">
-						<svg height="80px" width="4px">
-							<line x1="2" y1="2" x2="2" y2="78" />
-						</svg>
 						<p class="ervaringJaar">feb 2025 - juli 2025</p>
 						<p class="ervaringNaam">Militair Revalidatie Centrum Aardenburg</p>
 						<p class="ervaringOpleiding">Afstudeerstage Wayfinding</p>
 					</li>
 					<li class="ervaring">
-						<svg height="80px" width="4px">
-							<line x1="2" y1="2" x2="2" y2="78" />
-						</svg>
 						<p class="ervaringJaar">aug. 2022 - feb. 2023</p>
 						<p class="ervaringNaam">Donkeys & Co.</p>
 						<p class="ervaringOpleiding">Stagiair Interaction Designer</p>
 					</li>
 				</ul>
-
+			-->
 			</div>
 			<div class="contactSection">
 				<div class="contactInfo">
-				<p>Contact mij</p>
-				<h2>Hoe kan ik helpen?</h2>
-				<ul>
-					<li>
-						<img src="">
-						<p>06 23 62 7997</p>
-					</li>
-					<li>
-						<img src="">
-						<p>tbruines@gmail.com</p>
-					</li>
-					<li>
-						<img src="">
-						<p>Tim Bruines</p>
-					</li>
-				</ul>
+					<p>Contact mij</p>
+					<h2>Hoe kan ik helpen?</h2>
+					<ul>
+						<li>
+							<img src="images/phoneIcon.png">
+							<a>06 23 62 79 97</a>
+						</li>
+						<li>
+							<img src="images/EmailIcon.png">
+							<a href="mailto:tbruines@gmail.com">tbruines@gmail.com</a>
+						</li>
+						<li>
+							<img src="images/linkedinIcon.png">
+							<a href="https://www.linkedin.com/in/timbruines/" target="_blank">Tim Bruines</a>
+						</li>
+					</ul>
 				</div>
 				<div >
 					<form class="contactForm">
 						<div class="jeNaam">
-							<label>Je naam</label>
-							<input>
+							<label>Je naam *</label>
+							<input type="text">
 						</div>
 						<div class="jeEmail">
-							<label>Email</label>
-							<input>
+							<label>Email *</label>
+							<input type="text">
 						</div>	
 						<div class="jeTelefoonnummer">
-							<label>Telefoonnummer</label>
-							<input>
+							<label>Telefoonnummer *</label>
+							<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
 						</div>		
 						<div class="jeOnderwerp">
-							<label>Onderwerp</label>
-							<input>
+							<label>Onderwerp *</label>
+							<input type="text">
 						</div>			
 						<div class="jeBericht">
-							<label>Je bericht</label>
-							<input>
+							<label>Je bericht *</label>
+							<textarea class="bericht"></textarea>
 						</div>		
 						<input type="button" value="Versturen" class="cta">
 					</form>
 				</div>
 			</div>
+
 		</div>
+		<footer>
+			<div class="footerInfo">
+				<p>Tim Bruines.</p>
+				<ul>
+					<li>Navigatie</li>
+					<li><a>Home</a></li>
+					<li><a>Services</a></li>
+					<li><a>Projecten</a></li>
+					<li><a>Over mij</a></li>
+				</ul>
+				<ul>
+					<li>Contact</li>
+					<li>www.timbruines.nl</li>
+					<li>06 23 62 79 97</li>
+					<li>tbruines@gmail.com</li>
+				</ul>
+			</div>
+			<div class="copyright">
+				<p>Copyright © 2025 Tim Bruines.</p>
+			</div>
+			
+		</footer>
 	</body>
 </html>
