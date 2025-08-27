@@ -17,6 +17,22 @@ body {
 	margin:0;
 }
 
+.content {
+	display:flex;
+	flex-flow: column wrap;
+}
+
+.content > div:nth-child(2n+1){
+	background: #fff;
+}
+
+.content > div:nth-child(2n+0){
+	background: #f0f0f0;
+}
+
+.content:first-child{
+	background:#1a1a1a;
+}
 
 nav {
 	color:#FFFFFF;
@@ -29,6 +45,7 @@ nav {
 	top:0;
 	font-size:20px;
 	font-weight:800;
+	overflow:hidden;
 }
 
 .title {
@@ -184,14 +201,16 @@ ul {
 .services {
 	display:grid;
 	padding:100px 0;
-	grid-template-columns: 350px 350px 350px;
+	grid-auto-columns: 350px;
 	align-content: center;
 	justify-content: center;
+	grid-auto-flow: row;
 	column-gap:30px;
 	row-gap:30px;
 	color:#1a1a1a;
 	background-color: #1a1a1a;
 	padding:100px 30px;
+	grid-template-columns: 350px 350px 350px;
 }
 
 .services h2 {
@@ -203,7 +222,7 @@ ul {
 }
 
 .services a {
-	grid-column: 1/4;
+	grid-column: 1/ span 3;
 	justify-self: center;
 	width: fit-content;
 	display:block;
@@ -595,10 +614,94 @@ input[type=button] {
 	min-height: 60px;
 }
 
-@media only screen and (max-width: 1200px) and (min-width:1050px) {
+
+
+.firstHeading { 
+	font-size:64px;
+	font-weight: 900;
+}
+
+
+
+@media only screen and (max-width:800px){
+	.services {
+		grid-template-columns: 350px;
+	}
+
+	.services h2 {
+		grid-column: 1/1;
+	}
+
+	.services a {
+		grid-column: 1/1;
+	}
+}
+
+@media only screen and (max-width: 950px) and (min-width:801px){
+	.services {
+	grid-template-columns: 350px 350px;
+	padding:100px 30px;
+  }
+
+   .services a {
+	grid-column: 1/2;
+  }
+
+  .services h2 {
+	grid-column: 1/2;
+  }
+
+  
+ 
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 951px) {
+	.laatsteProjecten {
+		grid-template-columns: auto;
+
+	}
+
+	.services {
+		grid-template-columns: 350px 350px;
+		padding:100px 30px;
+		grid-auto-flow: row;
+	}
+
+	.services a {
+	grid-column: 1/3;
+  }
+
+  .services h2 {
+	grid-column: 1/3;
+  }
+
+	.toolcards ul {
+		grid-template-columns: auto auto auto auto auto;
+	}
+
+	.opleidingEnErvaring ul {
+	grid-template-columns: auto;
+	grid-column: 1/3;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	margin:0 0 30px 0;
+	width: 555px;
+	}
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width:1051px) {
   .services {
-	grid-template-columns: auto auto;
-	
+	grid-template-columns: 350px 350px;
+  }
+
+  .services h2 {
+	grid-column: 1/3;
+  }
+
+  .services a {
+	grid-column: 1/3;
   }
 
   .laatsteProjecten {
@@ -626,51 +729,3 @@ input[type=button] {
 
 }
 
-
-@media only screen and (max-width: 1050px) and (min-width: 950px)  {
-	.laatsteProjecten {
-		grid-template-columns: auto;
-
-	}
-
-	.services {
-		grid-template-columns: auto auto auto;
-		padding:100px 30px;
-	}
-
-	.toolcards ul {
-		grid-template-columns: auto auto auto auto auto;
-	}
-
-	.opleidingEnErvaring ul {
-	grid-template-columns: auto;
-	grid-column: 1/3;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
-	margin:0 0 30px 0;
-	width: 555px;
-	}
-
-}
-
-@media only screen and (max-width: 950px){
-	.services {
-	grid-template-columns: auto;
-	padding:100px 30px;
-  }
-
-   .services a {
-	grid-column: 1/2;
-  }
-
-  .services h2 {
-	grid-column: 1/2;
-  }
-
-  .service {
-	width:50%;
-  }
-  
- 
-}
