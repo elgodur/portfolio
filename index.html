@@ -8,37 +8,39 @@
 		<link href="style.css" rel="stylesheet">
 	</head>
 	<body>
-		<nav>
-			<a href="/index.html" class="title">Tim Bruines</a>	 
-			<ul class="nav" id="myNav">
-				<li>
-					<a href="pages/skills.html" class="nav-page">Skills</a>
-				</li>
-				<li>
-					<a href="pages/projecten.html" class="nav-page">Projecten</a>
-				</li>
-				<li> 
-					<a href="pages/overmij.html" class="nav-page">Over mij</a>
-				</li>
-				<li>
-					<a href="documents/CV-TimBruines2025.pdf" download class="nav-page">Resumé</a>
-				</li>
-				<li>
-					<a href="pages/contact.html" class="contact nav-page">Contact</a>
-				</li>
-				<li>
-					<a href="javascript:void(0);" class="icon" onclick="myResponsiveNav()">
-   					 	<i class="fa fa-bars"></i>
- 					</a>
-				</li>
-			</ul>
-			</div>
-		</nav>
+		<header>
+			<nav>
+				<a href="/index.html" class="title">Tim Bruines.</a>	 
+				<ul class="nav" id="myNav">
+					<li>
+						<a href="pages/skills.html" class="nav-page">Skills</a>
+					</li>
+					<li>
+						<a href="pages/projecten.html" class="nav-page">Projecten</a>
+					</li>
+					<li> 
+						<a href="pages/overmij.html" class="nav-page">Over mij</a>
+					</li>
+					<li>
+						<a href="documents/CV-TimBruines2025.pdf" download class="nav-page">Resumé</a>
+					</li>
+					<li>
+						<a href="pages/contact.html" class="contact nav-page">Contact</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="icon" onclick="myResponsiveNav()">
+						 	<i class="fa fa-bars"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 		<script src="scripts/main.js"></script>
-<div class="hero">	
+			<div class="heroGradient">
+			<div class="hero">	
 				<div>
 					<p>Hoi, ik ben</p>
-					<p style="font-weight: 900; font-size:64px;">Tim Bruines.</p>
+					<p class="heroTitle">Tim Bruines.</p>
 					<p>Een UX Designer uit Hazerswoude Dorp</p><br>
 					<div class="buttons">
 						<a href="#" class="cta">Projecten</a>
@@ -46,32 +48,36 @@
 					</div>
 				</div>
 				<div>
-					<img src="images/overMijTim.png" class="heroImage">
+					<img src="/assets/images/overMijTim.png" class="heroImage">
 				</div>
 			</div>
-						<div class="services">
-				<h2>Skills</h2>
+		</div>
+			<div>
+				<div class="services">
+					<h2>Skills</h2>
+					<div class="service">
+						<img src="/assets/images/GraphicDesignIcon.svg">
+						<p>Graphic Design</p>
+						<p>Mijn ervaring in grafisch ontwerp helpt me om visueel sterke en samenhangende ontwerpen te maken die de gebruikerservaring ondersteunen.</p>
+						<a href="#" class="leesMeer">Lees meer</a>
+					</div>
 				<div class="service">
-					<img src="images/GraphicDesignIcon.svg">
-					<p>Graphic Design</p>
-					<p>Mijn ervaring in grafisch ontwerp helpt me om visueel sterke en samenhangende ontwerpen te maken die de gebruikerservaring ondersteunen.</p>
-					<a href="#" class="leesMeer">Lees meer</a>
-				</div>
-				<div class="service">
-					<img src="images/ui-uxdesign.svg">
+					<img src="/assets/images/ui-uxdesign.svg">
 					<p>UI / UX Design</p>
 					<p>Hier focus ik op het begrijpen van de gebruiker en hun behoeften. Met deze inzichten vertaal ik naar intuïtieve en effectieve user interfaces (UI).</p>
 					<a href="#" class="leesMeer">Lees meer</a>
 				</div>
 				<div class="service">
-					<img src="images/prototypingicon.svg">
+					<img src="/assets/images/prototypingicon.svg">
 					<p>Prototyping</p>
 					<p>Door middel van prototyping tools maak ik interactieve prototypes die het eindproduct realistisch nabootsen.</p>
 					<a href="#" class="leesMeer">Lees meer</a>
 				</div>
 					<a href="#" class="cta">Services</a>
 			</div>
+			</div>
 		<div class="content">
+			<div style="display:flex; justify-content: center;">
 			<div class="tools">
 				<p>Mijn favoriete tools</p>
 				<h2>De tools achter mijn designs.</h2>
@@ -110,7 +116,8 @@
 				</div>
 
 			</div>
-
+			</div>
+			<div style="display:flex; justify-content: center;">
 			<div class="portfolio">
 				<p>Mijn portfolio</p>
 				<h2>Mijn laatste projecten</h2>
@@ -159,12 +166,14 @@
 					</ul>
 				
 			</div>
+			</div>
+			<div style="display:flex; justify-content: center;">
 			<div class="opleidingEnErvaring">
 				<p>Opleidingen & Werkervaring</p>
 				<h2>Mijn Opleidingen en Professionele reis.</h2>
 				<ul>
 					<li >
-						<img src="images/schoolicon.png">
+						<img src="/assets/images/schoolicon.png">
 						<p>Opleidingen</p>
 					</li>
 					<li class="ervaring">
@@ -185,7 +194,7 @@
 				</ul>
 				<ul>
 					<li>
-						<img src="images/workicon.png">
+						<img src="/assets/images/workicon.png">
 						Werkervaring</li>
 					<li class="ervaring">
 						<p class="ervaringJaar">feb 2025 - juli 2025</p>
@@ -200,21 +209,23 @@
 				</ul>
 			
 			</div>
+			</div>
+			<div style="display: flex; justify-content: center;">
 			<div class="contactSection">
 				<div class="contactInfo">
 					<p>Contact mij</p>
 					<h2>Hoe kan ik helpen?</h2>
 					<ul>
 						<li>
-							<img src="images/phoneIcon.png">
-							<a>06 23 62 79 97</a>
+							<img src="/assets/images/phoneIcon.png">
+							<a>+31 6 23 62 79 97</a>
 						</li>
 						<li>
-							<img src="images/EmailIcon.png">
+							<img src="/assets/images/EmailIcon.png">
 							<a href="mailto:tbruines@gmail.com">tbruines@gmail.com</a>
 						</li>
 						<li>
-							<img src="images/linkedinIcon.png">
+							<img src="/assets/images/linkedinIcon.png">
 							<a href="https://www.linkedin.com/in/timbruines/" target="_blank">Tim Bruines</a>
 						</li>
 					</ul>
@@ -245,29 +256,30 @@
 					</form>
 				</div>
 			</div>
-
+			</div>
 		</div>
-		<footer>
+		<footer >
+			
 			<div class="footerInfo">
 				<p>Tim Bruines.</p>
 				<ul>
 					<li>Navigatie</li>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="pages/services.html">Services</a></li>
+					<li><a href="pages/services.html">Skills</a></li>
 					<li><a href="pages/projecten.html">Projecten</a></li>
 					<li><a href="pages/overmij.html">Over mij</a></li>
 				</ul>
 				<ul>
 					<li>Contact</li>
 					<li><a href="">www.timbruines.nl</a></li>
-					<li>06 23 62 79 97</li>
+					<li>+31 6 23 62 79 97</li>
 					<li><a href="mailto:tbruines@gmail.com">tbruines@gmail.com</a></li>
 				</ul>
 			</div>
 			<div class="copyright">
 				<p>Copyright © 2025 Tim Bruines.</p>
 			</div>
-			
+		
 		</footer>
 	</body>
 </html>
