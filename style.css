@@ -19,19 +19,15 @@ body {
 
 .content {
 	display:flex;
-	flex-flow: column wrap;
+	justify-content: center;
 }
 
-.content > div:nth-child(2n+1){
-	background: #fff;
+.content:nth-of-type(2n+2){
+	background-color:#f0f0f0;
 }
 
-.content > div:nth-child(2n+0){
-	background: #f0f0f0;
-}
-
-.content:first-child{
-	background:#1a1a1a;
+.content:nth-of-type(2n+1){
+	background-color:#fff;
 }
 
 header {
@@ -81,7 +77,7 @@ a {
 	display:none;
 }
 
-.contact {
+.contactCTA {
 	padding:20px 30px;
 	border-radius:10px;
 	background-color: #195DE6;
@@ -226,16 +222,17 @@ ul {
 }
 
 .services {
-	display:grid;
+	display:flex;
 	padding:100px 0;
-	grid-auto-columns: 370px;
 	align-content: center;
-	justify-content: center;
-	grid-auto-flow: row;
+	flex-flow: row wrap;
 	column-gap:30px;
 	row-gap:30px;
 	color:#1a1a1a;
 	background-color: #1a1a1a;
+	grid-template-columns:370px;
+	width:1170px;
+	justify-content: center;
 }
 
 .services h2 {
@@ -243,14 +240,12 @@ ul {
 	font-weight: 900;
 	line-height: 60px;
 	color:white;
-	grid-column: 1/4;
 }
 
 .services a {
-	grid-column: 1/ span 3;
 	justify-self: center;
+	align-self: auto;
 	width: fit-content;
-	display:block;
 }
 
 .service {
@@ -261,6 +256,7 @@ ul {
 	background:#f0f0f0;
 	padding:30px;
 	border-radius:10px;
+	flex-basis:370px;
 }
 .service img {
 	height:100px;
@@ -561,6 +557,10 @@ ul {
 	padding:100px 0px;
 	width:1170px;
 	column-gap:60px;
+}
+
+.contact {
+	background:#f0f0f0 !important;
 }
 
 .contactInfo {
