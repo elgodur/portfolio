@@ -1,4 +1,4 @@
-<?php include 'parts/header.php'; ?>
+<?php require 'parts/header.php'; ?>
 	<div class="heroGradient">
 		<div class="hero">	
 			<div>
@@ -6,8 +6,8 @@
 				<p class="heroTitle">Tim Bruines.</p>
 				<p>Een UX Designer uit Hazerswoude Dorp</p><br>
 				<div class="buttons">
-					<a href="#" class="cta">Projecten</a>
-					<a href="#" class="cta-outline">Contact</a>
+					<a href="/pages/projecten.php" class="cta">Projecten</a>
+					<a href="/pages/contact.php" class="cta-outline">Contact</a>
 				</div>
 			</div>
 			<div>
@@ -15,7 +15,7 @@
 			</div>
 		</div>
 	</div>
-		<div style="display:flex;justify-content:center;background-color:#1a1a1a;">
+		<div class="content" style="background-color:#1a1a1a;">
 			<div class="services">
 				<h2 style="align-self: flex-start; flex-basis:100%;">Skills</h2>
 				<div class="service">
@@ -36,7 +36,9 @@
 					<p>Door middel van prototyping tools maak ik interactieve prototypes die het eindproduct realistisch nabootsen.</p>
 					<a href="#" class="leesMeer">Lees meer</a>
 				</div>
-				<a href="#" class="cta">Services</a>
+				<div class="servicesA">
+					<a href="#" class="cta">Services</a>
+				</div>
 			</div>
 		</div>
 	<div class="content">
@@ -170,6 +172,6 @@
 		</div>
 	</div>
 <?php
-include 'parts/contact.php';
-include 'parts/footer.php';
+require 'parts/contact.php';
+require 'parts/footer.php';
 ?>

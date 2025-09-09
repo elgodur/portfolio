@@ -2,6 +2,8 @@
 
 html {
 	box-sizing: border-box;
+	overflow:hidden;
+	height:100%;
 }
 
 *, *::before, *::after {
@@ -15,11 +17,24 @@ body {
   	font-optical-sizing: auto;
   	font-style: normal;
 	margin:0;
+	overflow:auto;
+	height:100%;
+}
+
+h2 {
+	font-size:36px;
+	font-weight: 900;
+	line-height: 60px;
 }
 
 .content {
 	display:flex;
 	justify-content: center;
+}
+
+.content > div {
+	width:1170px;
+	padding:100px 0;
 }
 
 .content:nth-of-type(2n+2){
@@ -40,10 +55,6 @@ header {
 
 nav {
 	color:#FFFFFF;
-	height:100px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	width:1170px;
 	font-size:20px;
 	font-weight:800;
@@ -51,9 +62,12 @@ nav {
 }
 
 .title {
-	padding:0;
-	background: #1a1a1a;
+	padding:20px 0 !important;
+	background: #1a1a1a !important;
 	text-transform: uppercase;
+	color:white !important;
+	text-align: left !important;
+	margin:20px 0 !important;
 }
 
 a {
@@ -62,37 +76,28 @@ a {
 	color:inherit;
 }
 
-.nav {
-	display:flex;
-  	list-style: none;
-	align-items: center;
-	padding:0;
-}
-
-.nav li {
-	padding-left:30px;
-}
-
-.nav li:last-of-type {
-	display:none;
-}
-
 .contactCTA {
 	padding:20px 30px;
 	border-radius:10px;
 	background-color: #195DE6;
 }
 
-.nav-page {
+.nav a:first-child{
+	float:left;
+}
+
+.nav a {
 	transition:background-color 400ms ease-out;
 	color:white;
 	text-decoration: none;
 	display:block;
 	padding:20px 30px;
 	border-radius:10px;
+	float:inline-end;
+	margin:20px 0;
 }
 
-.nav-page:hover{
+.nav a:hover{
 	background-color: white;
 	color:#1A1A1A;
 	-webkit-transition: background-color 200ms ease-out;
@@ -223,7 +228,6 @@ ul {
 
 .services {
 	display:flex;
-	padding:100px 0;
 	align-content: center;
 	flex-flow: row wrap;
 	column-gap:30px;
@@ -283,7 +287,7 @@ ul {
 	display:block;
 	line-height: 20px;
 	font-weight: 700;
-	background-image: url("images/arrowCTA.svg");
+	background-image: url("/assets/images/arrowCTA.svg");
 	background-repeat:no-repeat;
 	background-size: 20%;
 	background-position: right;
@@ -299,8 +303,6 @@ ul {
 	justify-content: center;
 	align-items: center;
 	color:#1a1a1a;
-	padding:100px 0;
-	width:1170px;
 }
 
 .tools p {
@@ -320,7 +322,6 @@ ul {
 	display:flex;
 	column-gap: 30px;
 	row-gap:30px;
-	width:1170px;
 	flex-wrap: wrap;
 	justify-content: center;
 }
@@ -378,14 +379,11 @@ ul {
 }
 
 .portfolio {
-	background:#f0f0f0;
 	display:grid;
 	grid-template-columns: auto auto;
 	color:#1a1a1a;
 	justify-content: center;
 	align-items: center;
-	padding:100px 0;
-	width:1170px;
 }
 
 .portfolio p{
@@ -418,6 +416,7 @@ ul {
 	background:#fff;
 	border-radius:10px;
 	padding:30px;
+	color:#1A1A1A;
 }
 
 .projectImage {
@@ -474,7 +473,6 @@ ul {
 
 .opleidingEnErvaring {
 	display:grid;
-	padding:100px 0;
 	grid-template-columns: 570px 570px;
 	column-gap: 30px;
 	justify-items: center;
@@ -572,6 +570,7 @@ ul {
 	font-weight: 900;
 	color:#1a1a1a;
 	margin-bottom:30px;
+	font-size:32px;
 }
 
 .contactInfo ul {
@@ -626,6 +625,12 @@ input[type=text] {
 	padding:15px;
 }
 
+input[type=tel] {
+	font-size: 16px;
+	font-family: 'inter', sans-serif;
+	padding:15px;
+}
+
 input[type=button]	{
 	border:none;
 	grid-column:1/2;
@@ -651,28 +656,146 @@ input[type=button]	{
 	font-weight: 900;
 }
 
-
-
-@media only screen and (max-width:800px){
-	.services {
-		grid-template-columns: 350px;
-	}
-
-	.services h2 {
-		grid-column: 1/1;
-	}
-
-	.services a {
-		grid-column: 1/1;
-	}
+.detail {
+	display:flex;
+	width:1170px;
+	flex-flow:row wrap;
+	color:#1a1a1a;
 }
 
-@media only screen and (max-width: 950px) and (min-width:801px){
-	.services {
+.detailTekst {
+	width:50%;
+	display:flex;
+	flex-flow:row wrap;
+	align-content: center;
+}
+
+.detailTekst p {
+	line-height: 48px;
+}
+
+.detailAfbeelding {
+	align-items: center;
+}
+
+.detailAfbeelding:nth-child(2n) {
+	display:flex;
+	width:50%;
+	justify-content: end;
+}
+
+.detailAfbeelding:nth-child(2n+1) {
+	display:flex;
+	width:50%;
+	justify-content: start;
+}
+
+.detailAfbeelding img {
+	border-radius: 10px;
+	width:75%;
+}
+
+.detailTekst h2 {
+	padding-bottom:15px;
+
+}
+
+.nav .icon {
+	display:none;
+	padding:20px;
+}
+
+@media only screen and (max-width: 430px) {
+.buttons {
+	justify-content: space-between;
+}
+.hero {
+	flex-flow: column-reverse wrap;
+	align-content: center;
+	row-gap:30px;
+	padding:50px 0;
+}
+
+.contactCTA {
+	background:none;
+}
+
+.heroTitle {
+	font-size: 58px;
+}
+
+.heroImage {
+	width:350px;
+}
+
+.footerInfo {
+	grid-template-columns: auto;
+	text-align: center;
+	row-gap:30px;
+	padding:50px 0;
+}
+
+.footerInfo p {
+	width: inherit;
+}
+
+.footerInfo ul {
+	width:inherit;
+}
+
+.nav a:not(:first-child) {
+	display:none;
+}
+.nav a.icon {
+	display:block;
+	float:right;
+	width:fit-content !important;
+}
+
+.nav.responsive {
+	position: relative;
+	display:flex;
+	flex-direction: column-reverse;
+}
+
+.nav.responsive .icon {
+	position:absolute;
+	right:0;
+	top:0;
+	margin:20px 0;
+	border-radius:10px;
+	background-color: white;
+	color:#1A1A1A;
+}
+
+.nav.responsive a {
+	float:none;
+	display:block;
+	text-align:center;
+	margin:0;
+}
+
+.nav.responsive a:first-child {
+	order:1;
+}
+
+.nav.responsive a:nth-last-child(6n) {
+	margin-bottom: 20px;
+}
+
+.services {
 	grid-template-columns: 350px 350px;
 	padding:100px 30px;
-  }
+	}
 
+nav, .footerInfo,.hero,.contactSection,.portfolio,.tools,.toolcards ul,.footerInfo	{
+	width:365px;
+}
+
+.content > div {
+	width:365px;
+	padding:50px 0;
+}
    .services a {
 	grid-column: 1/2;
   }
@@ -681,11 +804,107 @@ input[type=button]	{
 	grid-column: 1/2;
   }
 
-  
- 
+.laatsteProjecten {
+	grid-template-columns: 365px;
 }
 
-@media only screen and (max-width: 1050px) and (min-width: 951px) {
+.projectImage {
+	height:300px;
+}
+ 
+.opleidingEnErvaring {
+	grid-template-columns: 365px;
+}
+
+.opleidingEnErvaring p {
+	grid-column: 1/2;
+}
+
+.opleidingEnErvaring h2 {
+	grid-column:1/2;
+}
+
+h2 {
+	text-align: center;
+}
+
+.opleidingEnErvaring ul:first-of-type {
+	margin-bottom:30px;
+}
+
+.portfolio p {
+	text-align: center;
+}
+
+.portfolio h2 {
+	text-align: center;
+	font-weight: 900;
+}
+
+.contactSection h2 {
+	text-align: left;
+}
+
+.contactSection {
+	flex-direction: column;
+	row-gap: 60px;
+}
+
+.contactForm {
+	grid-template-columns: auto;
+}
+
+.contactForm > div {
+	grid-column: 1/2;
+}
+
+.bericht {
+	min-height: 90px;
+}
+
+}
+
+@media only screen and (max-width: 1050px) and (min-width:430px) {
+.nav a:not(:first-child) {
+	display:none;
+}
+.nav a.icon {
+	display:block;
+	float:right;
+	width:fit-content !important;
+}
+
+.nav.responsive {
+	position: relative;
+	display:flex;
+	flex-direction: column-reverse;
+}
+
+.nav.responsive .icon {
+	position:absolute;
+	right:0;
+	top:0;
+	margin:20px 0;
+	border-radius:10px;
+	background-color: white;
+	color:#1A1A1A;
+}
+
+.nav.responsive a {
+	float:none;
+	display:block;
+	text-align:center;
+	margin:0;
+}
+
+.nav.responsive a:first-child {
+	order:1;
+}
+
+.nav.responsive a:nth-last-child(6n) {
+	margin-bottom: 20px;
+}
+
 .laatsteProjecten {
 	grid-template-columns: 600px;
 }
@@ -698,10 +917,12 @@ input[type=button]	{
 	font-size:48px;
 }
 
-.services {
-	grid-template-columns: 300px 300px;
-	padding:100px 30px;
-	grid-auto-flow: row;
+.contactCTA {
+	background:#1a1a1a;
+}
+
+.service {
+	flex-basis:600px;
 }
 
 .services a {
@@ -743,6 +964,10 @@ input[type=button]	{
 	margin:0 0 30px 0;
 }
 
+.content > div {
+	width:600px;
+}
+
 nav, .footerInfo,.hero,.contactSection,.portfolio,.tools,.toolcards ul,.footerInfo	{
 	width:600px;
 }
@@ -764,21 +989,28 @@ nav, .footerInfo,.hero,.contactSection,.portfolio,.tools,.toolcards ul,.footerIn
 }
 
 @media only screen and (max-width: 1400px) and (min-width:1051px) {
+
 .services {
-	grid-template-columns: 385px 385px;
+	justify-content: space-between;
+	column-gap: 0;
 }
 
-.services h2 {
-	grid-column: 1/3;
+.servicesA {
+	align-self: flex-start;
+	justify-self: center;
+	flex-basis:100%;
+	width:fit-content;
 }
 
-.services a {
-	grid-column: 1/3;
+.service {
+	flex-basis:385px;
+	align-content: left;
 }
 
 .laatsteProjecten {
-	justify-content: center;
+	justify-content: space-between;
 	grid-template-columns: 385px 385px;
+	align-items: normal;
 }
 
 .projectImage {
@@ -805,6 +1037,14 @@ nav, .footerInfo,.hero,.contactSection,.portfolio,.tools,.toolcards ul,.footerIn
 }
 
 nav, .footerInfo,.hero,.contactSection,.portfolio,.tools,.toolcards ul,.footerInfo	{
+	width:800px;
+}
+
+.nav a {
+	margin:20px 0;
+}
+
+.content > div {
 	width:800px;
 }
 

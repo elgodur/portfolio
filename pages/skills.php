@@ -1,11 +1,11 @@
-<?php include ($_SERVER['DOCUMENT_ROOT'].'/parts/header.php');?>
+<?php require ($_SERVER['DOCUMENT_ROOT'].'/parts/header.php');?>
 	<div class="content">
 		<div class="hero" style="flex-direction: column;">
 			<p>Mijn skills</p>
 			<h1 class="firstHeading">Skills</h1>
 		</div>
 	</div>
-	<div style="display:flex; justify-content:center;background-color:#1a1a1a;">
+	<div class="content" style="background-color:#1a1a1a;">
 		<div class="services">		
 				<div class="service">
 					<img src="/assets/images/GraphicDesignIcon.svg">
@@ -80,6 +80,6 @@
 			</div>
 	</div>
 <?php
-include ($_SERVER['DOCUMENT_ROOT'].'/parts/contact.php');
-include ($_SERVER['DOCUMENT_ROOT'].'/parts/footer.php');
+require ($_SERVER['DOCUMENT_ROOT'].'/parts/contact.php');
+require ($_SERVER['DOCUMENT_ROOT'].'/parts/footer.php');
 ?>
